@@ -1,1 +1,1 @@
-/home/dwyatt/git/notion/look.lua
+dopath('look_derek')
