@@ -26,7 +26,7 @@ CTRL="Control+"
 META="Mod1+"
 
 defbindings("WMPlex.toplevel", {
-    kpress("F2", "ioncore.exec_on(_, 'gnome-terminal')"),
+    kpress("F2", "ioncore.exec_on(_, 'xterm')"),
     kpress(CTRL.."F4", "ioncore.exec('xstart')"),
     kpress("F5", "mod_query.query_workspace(_)"),
     kpress("F6", "ioncore.create_ws(_)"),
@@ -94,6 +94,8 @@ defbindings("WFrame", {
         kpress("J", "ioncore.goto_next(_, 'down')"),
         kpress("N", "WFrame.switch_next(_)"),
         kpress("M", "WFrame.switch_prev(_)"),
+        kpress("U", "WFrame.set_mode(_, 'floating')"),
+        kpress("Y", "WFrame.set_mode(_, 'tiled')"),
     }),
     mdrag(META.."Button1", "WFrame.p_resize(_)"),
 })
@@ -231,3 +233,7 @@ defwinprop {
     target = "Terminals1-UpperRight",
 }
 
+defwinprop {
+    class = "SDL_App",
+    instance = "SDL_App",
+}
