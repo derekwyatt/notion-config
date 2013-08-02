@@ -37,7 +37,7 @@ mod_statusbar.create {
     -- right, respectively, and %systray is a placeholder for system tray
     -- windows and icons.
     --
-    template="[ %fname ] [ %date ] [ uptime: %uptime load: %load ] cpu:[ user:%cpustat_user sys:%cpustat_system idle:%cpustat_idle ] mem:[ u:%meminfo_mem_used f:%meminfo_mem_free c:%meminfo_mem_cached ] swap:[ u:%meminfo_swap_used f:%meminfo_swap_free ] vol:[ %volume_level %volume_state ] %filler weather:[ %weather_timestamp: %weather_tempC C %weather_sky %weather_windspeed MPH ] %systray",
+    template="[ %date ] [ uptime: %uptime load: %load ] cpu:[ user:%cpustat_user sys:%cpustat_system idle:%cpustat_idle ] mem:[ u:%meminfo_mem_used f:%meminfo_mem_free c:%meminfo_mem_cached ] swap:[ u:%meminfo_swap_used f:%meminfo_swap_free ] %filler %systray_dock",
     --template="[ %date || load:% %>load || mail:% %>mail_new/%>mail_total ] %filler%systray",
     --template="[ %date || load: %05load_1min || mail: %02mail_new/%02mail_total ] %filler%systray",
 }

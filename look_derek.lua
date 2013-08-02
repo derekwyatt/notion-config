@@ -13,7 +13,7 @@ de.defstyle("*", {
   highlight_pixels = 0,
   shadow_pixels = 0,
   border_style = "elevated",
-  font = "-*-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*",
+  font = "-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*",
   text_align = "center",
 })
 
