@@ -107,7 +107,7 @@ defbindings("WFrame", {
         kpress("Y", "WFrame.set_mode(_, 'tiled')"),
         kpress("0", "WFrame.begin_kbresize(_)"),
     }),
-    mdrag(META.."Button1", "WFrame.p_resize(_)"),
+    mdrag(META.."Button1", "WFrame.p_tabdrag(_)"),
 })
 
 defbindings("WTiling", {
